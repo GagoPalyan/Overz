@@ -1,0 +1,454 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.w-100 {
+  width: 1440px !important;
+  min-width: 1180px !important;
+  height: 551px !important;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.carousel1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.carousel1 .carouselTextH {
+  width: 1180px;
+  height: 157px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
+}
+.carousel1 .carouselTextH h2 {
+  color: #bece00;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.carousel1 .carouselTextH h1 {
+  font-family: Poppins;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.carousel1 .carouselTextP {
+  width: 1180px;
+  height: 132px;
+}
+.carousel1 .carouselTextP p {
+  color: #f5f5f5;
+  width: 678px;
+  text-align: left;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 187.5% */
+  text-transform: capitalize;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+  height: 299px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+header .head {
+  width: 1180px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+header .head .nav {
+  width: 370px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .head .nav div {
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .head .nav div:hover a {
+  border-bottom: 1px solid #021d25;
+}
+header .head .nav div a {
+  font-size: 14px;
+  border-bottom: 1px solid rgba(2, 29, 37, 0);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17px;
+  text-decoration: none;
+  color: #021d25;
+}
+header .head .nav div img {
+  width: 24px;
+  height: 24px;
+}
+header .head .nav .Search {
+  width: 76px;
+}
+header .head .nav .FollowUs {
+  width: 66px;
+}
+header .head .nav .LogIn {
+  width: 72px;
+}
+header .head .nav button {
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  margin-left: 74.75px;
+  background-color: unset;
+  border: none;
+  border-bottom: 2px solid black;
+}
+header .body {
+  width: 100%;
+  height: 249px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0 30px 0;
+  background: var(--back-and-M-text, #021d25);
+}
+header .body nav {
+  width: 1180px;
+  height: auto;
+  border-bottom: 2px solid #bece00;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .body nav a {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  text-decoration: none;
+  color: white;
+}
+header .foot {
+  width: 1180px;
+  height: 101px;
+  padding-left: 39px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+header .foot h2 {
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+}
+
+#HomeCarousel {
+  width: 1440px;
+  height: 551px;
+}
+
+#HomeContent {
+  width: 1180px;
+  height: auto;
+  padding: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+#HomeContent .HomeVideoCart {
+  width: 780px;
+  height: 550px;
+  padding: 30px 30px 50px 30px;
+  background-color: #f5f5f5;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+#HomeContent .HomeVideoCart div {
+  width: 720px;
+  height: 325px;
+  position: relative;
+  background: linear-gradient(0deg, #000203 0%, rgba(2, 29, 37, 0) 100%);
+}
+#HomeContent .HomeVideoCart div iframe {
+  width: 100%;
+  height: 100%;
+}
+#HomeContent .HomeVideoCart div svg {
+  position: absolute;
+  top: 166px;
+  left: 0;
+}
+#HomeContent .HomeVideoCart p {
+  width: 267px;
+  height: 55px;
+  color: #021d25;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+}
+#HomeContent .HomeVideoCart h5 {
+  width: 720px;
+  color: #bece00;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  text-align: right;
+}
+
+.HomeCart {
+  width: 380px;
+  height: 550px;
+  padding: 30px 30px 50px 30px;
+  background-color: #f5f5f5;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.HomeCart div {
+  width: 316px;
+  height: 316px;
+  position: relative;
+}
+.HomeCart div img {
+  width: 100%;
+  height: 100%;
+}
+.HomeCart div h2 {
+  position: absolute;
+  top: 248px;
+  right: 37px;
+  color: #f5f5f5;
+  font-size: 32px;
+  font-weight: 600;
+}
+.HomeCart div svg {
+  position: absolute;
+  top: 125px;
+  left: 0;
+}
+.HomeCart p {
+  width: 267px;
+  height: auto;
+  color: #021d25;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+}
+.HomeCart h5 {
+  width: 320px;
+  color: #bece00;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  text-align: right;
+}
+
+footer {
+  width: 100%;
+  height: 250px;
+  background: #021d25;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .FooterContent {
+  width: 1180px;
+  height: 177px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .FooterContent .footerNav {
+  width: 180px;
+  height: 177px;
+  padding-left: 8px;
+  border-left: 1px solid #bece00;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+footer .FooterContent .footerNav nav {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+footer .FooterContent .footerNav nav a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  text-decoration: none;
+}
+footer .FooterContent .footerNav .FollowUs {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+footer .FooterContent .footerNav .FollowUs h2 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+}
+footer .FooterContent .footerNav .FollowUs nav {
+  flex-direction: row;
+}
+footer .FooterContent .footerNav .FollowUs nav a {
+  margin-right: 10px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+header {
+  height: 399px;
+}
+
+#AboutImg {
+  width: 1439px;
+  height: 603px;
+  position: relative;
+  background: url("../Images/AboutUs/Rectangle 3.png"), lightgray 50%/cover no-repeat;
+}
+#AboutImg h1 {
+  position: absolute;
+  right: 130px;
+  top: 463.5px;
+  color: #fff;
+  font-size: 64px;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+#AboutImg div {
+  width: 1439px;
+  height: 312.806px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(0deg, #000 0%, rgba(2, 29, 37, 0) 100%);
+}
+
+#About {
+  width: 1180px;
+  height: 500px;
+  margin: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#About .text {
+  width: 680px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+}
+#About .text h2 {
+  color: #000;
+  font-size: 20px;
+  margin-bottom: 42px;
+  font-weight: 600;
+  line-height: 30px;
+  text-transform: capitalize;
+}
+#About .text p {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 45px;
+}
+#About .image {
+  width: 480px;
+  height: 500px;
+  background: #f5f5f5;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#AboutUsContent {
+  width: 1180px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}/*# sourceMappingURL=AboutUs.css.map */
