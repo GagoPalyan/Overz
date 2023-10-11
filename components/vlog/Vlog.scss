@@ -1,0 +1,46 @@
+@import "../../Style/style.css";
+@import "../../Style/variables";
+@import "../../Style/mixins";
+
+header {
+  height: 399px;
+  @include display($flexDirection: column);
+}
+
+#VlogContent {
+  width: $desktop;
+  height: auto;
+  @include display($flexWrap: wrap);
+  .VideoCart {
+    width: 1178px;
+    height: 750px;
+    padding: 50px 79px 45px 79px;
+    div {
+      width: 1020px;
+      height: 550px;
+      svg {
+        width: 1020px;
+        height: 350px;
+        top: 200px;
+      }
+    }
+    h5 {
+      width: 1025px;
+    }
+  }
+  .Cart {
+    height: 500px;
+  }
+}
+
+section {
+  nav {
+    width: 196.883px;
+    height: 18px;
+    margin-bottom: 64px;
+    @include display;
+    a {
+      @include textStyle(12px, #022d3a, 500, 18px);
+    }
+  }
+}

@@ -1,0 +1,59 @@
+@import "../../Style/style.css";
+header {
+  height: 399px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+#VlogContent {
+  width: 1180px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#VlogContent .VideoCart {
+  width: 1178px;
+  height: 750px;
+  padding: 50px 79px 45px 79px;
+}
+#VlogContent .VideoCart div {
+  width: 1020px;
+  height: 550px;
+}
+#VlogContent .VideoCart div svg {
+  width: 1020px;
+  height: 350px;
+  top: 200px;
+}
+#VlogContent .VideoCart h5 {
+  width: 1025px;
+}
+#VlogContent .Cart {
+  height: 500px;
+}
+
+section nav {
+  width: 196.883px;
+  height: 18px;
+  margin-bottom: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+section nav a {
+  color: #022d3a;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: capitalize;
+}/*# sourceMappingURL=Vlog.css.map */

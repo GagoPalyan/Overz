@@ -1,0 +1,43 @@
+@mixin display(
+  $justifyContent: space-between,
+  $alignItem: center,
+  $flexDirection: row,
+  $flexWrap: nowrap
+) {
+  display: flex;
+  align-items: $alignItem;
+  justify-content: $justifyContent;
+  flex-direction: $flexDirection;
+  flex-wrap: $flexWrap;
+}
+
+@mixin textStyle($size: 16px, $color: white, $weight: 600, $heigth: 26px) {
+  color: $color;
+  font-size: $size;
+  font-style: normal;
+  font-weight: $weight;
+  line-height: $heigth;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+@mixin cart($width: 380px, $height: 550px) {
+  width: $width;
+  height: $height;
+  padding: 30px 30px 50px 30px;
+  background-color: #f5f5f5;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-bottom: 50px;
+  cursor: pointer;
+  @include display($alignItem: start, $flexDirection: column);
+  p {
+    width: 267px;
+    height: auto;
+    @include textStyle(18px, #021d25, 500);
+  }
+  h5 {
+    width: 320px;
+    @include textStyle($color: #bece00);
+    text-align: right;
+  }
+}

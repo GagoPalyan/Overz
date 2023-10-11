@@ -1,0 +1,97 @@
+@import "../../Style/style.css";
+header {
+  height: 399px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+#AboutImg {
+  width: 1439px;
+  height: 603px;
+  position: relative;
+  background: url("../../Images/AboutUs/Rectangle 3.png"), lightgray 50%/cover no-repeat;
+}
+#AboutImg h1 {
+  position: absolute;
+  right: 130px;
+  top: 463.5px;
+  color: white;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 26px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+#AboutImg div {
+  width: 1439px;
+  height: 312.806px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(0deg, #000 0%, rgba(2, 29, 37, 0) 100%);
+}
+
+#About {
+  width: 1180px;
+  height: 500px;
+  margin: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+#About .text {
+  width: 680px;
+  height: 500px;
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+#About .text h2 {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  text-decoration: none;
+  text-transform: capitalize;
+  margin-bottom: 42px;
+}
+#About .text p {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-decoration: none;
+  text-transform: capitalize;
+  margin-bottom: 45px;
+}
+#About .image {
+  width: 480px;
+  height: 500px;
+  background: #f5f5f5;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+#AboutUsContent {
+  width: 1180px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}/*# sourceMappingURL=AboutUs.css.map */

@@ -1,0 +1,25 @@
+@import "../../Style/style.css";
+@import "../../Style/variables";
+@import "../../Style/mixins";
+
+header {
+  height: 399px;
+  @include display($flexDirection: column);
+}
+
+#EventsContent {
+  width: $desktop;
+  height: auto;
+  @include display($flexWrap: wrap);
+  .Cart {
+    @include cart($height: 400px);
+    div {
+      h2 {
+        width: 200px;
+        text-align: right;
+        top: 201px;
+        @include textStyle($size: 32px, $heigth: normal);
+      }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+@import "../../Style/style.css";
+@import "../../Style/variables";
+@import "../../Style/mixins";
+
+header {
+  height: 399px;
+  @include display($flexDirection: column);
+}
+
+#NewsImg {
+  width: 1440px;
+  height: 605px;
+  position: relative;
+  background: url("../../Images/News/Rectangle\ 40.png"),
+    lightgray 50% / cover no-repeat;
+  h2 {
+    position: absolute;
+    right: 130px;
+    top: 312.5px;
+    @include textStyle(32px, #fff, 100, normal);
+    text-align: right;
+  }
+  h1 {
+    position: absolute;
+    right: 130px;
+    top: 379.5px;
+    @include textStyle(64px, #bece00, 800, normal);
+    text-align: right;
+  }
+  h5 {
+    position: absolute;
+    left: 130px;
+    top: 500px;
+    width: 780px;
+    height: 61px;
+    @include textStyle(26px, #f5f5f5, 300);
+  }
+  div {
+    width: 1439px;
+    height: 312.806px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(0deg, #000 0%, rgba(2, 29, 37, 0) 100%);
+  }
+}
+
+#NewsContent {
+  padding: 44px 0 65px 0;
+  @include display($flexDirection: column);
+  .Cart {
+    @include display;
+    width: 1180px;
+    height: 250px;
+    padding: 0;
+    img {
+      width: 500px;
+      height: 250px;
+    }
+    div {
+      width: calc(100% - 500px - 43px);
+      height: 230px;
+      @include display($alignItem: start, $flexDirection: column);
+      h4 {
+        color: var(--back-and-M-text, #021d25);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: capitalize;
+      }
+      h3 {
+        color: var(--back-and-M-text, #021d25);
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: capitalize;
+      }
+      h6 {
+        margin-top: 20px;
+        margin-bottom: 15px;
+        width: 494px;
+        height: 115.358px;
+        color: var(--P-up-text, #022d3a);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+      h5 {
+        width: 611px;
+        text-align: right;
+      }
+    }
+  }
+  nav {
+    width: 196.883px;
+    height: 18px;
+    @include display;
+    a {
+      @include textStyle(12px, #022d3a, 500, 18px);
+    }
+  }
+}

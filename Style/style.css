@@ -1,23 +1,3 @@
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
 .w-100 {
   width: 1440px !important;
   min-width: 1180px !important;
@@ -85,22 +65,34 @@ h6 {
   font-family: Poppins;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
 main {
   width: 100%;
   height: auto;
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: space-between;
   flex-direction: column;
+  flex-wrap: nowrap;
 }
 
 header {
   width: 100%;
   height: 299px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: start;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 header .head {
   width: 1180px;
@@ -108,6 +100,8 @@ header .head {
   display: flex;
   align-items: center;
   justify-content: end;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 header .head .nav {
   width: 370px;
@@ -115,24 +109,29 @@ header .head .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 header .head .nav div {
   height: 24px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 header .head .nav div:hover a {
   border-bottom: 1px solid #021d25;
 }
 header .head .nav div a {
-  font-size: 14px;
   border-bottom: 1px solid rgba(2, 29, 37, 0);
+  color: #021d25;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 17px;
   text-decoration: none;
-  color: #021d25;
+  text-transform: capitalize;
 }
 header .head .nav div img {
   width: 24px;
@@ -153,6 +152,8 @@ header .head .nav button {
   font-style: normal;
   font-weight: 500;
   line-height: 18px;
+  text-decoration: none;
+  text-transform: capitalize;
   margin-left: 74.75px;
   background-color: unset;
   border: none;
@@ -162,9 +163,10 @@ header .body {
   width: 100%;
   height: 249px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: nowrap;
   padding: 12px 0 30px 0;
   background: var(--back-and-M-text, #021d25);
 }
@@ -175,14 +177,17 @@ header .body nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 header .body nav a {
+  color: white;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: 26px;
   text-decoration: none;
-  color: white;
+  text-transform: capitalize;
 }
 header .foot {
   width: 1180px;
@@ -190,13 +195,18 @@ header .foot {
   padding-left: 39px;
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 header .foot h2 {
   color: #000;
   font-size: 14px;
+  font-style: normal;
   font-weight: 500;
   line-height: 17px;
+  text-decoration: none;
+  text-transform: capitalize;
 }
 
 #HomeCarousel {
@@ -209,103 +219,128 @@ header .foot h2 {
   height: auto;
   padding: 50px 0;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-#HomeContent .HomeVideoCart {
+
+.VideoCart {
   width: 780px;
   height: 550px;
   padding: 30px 30px 50px 30px;
   background-color: #f5f5f5;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-bottom: 50px;
+  cursor: pointer;
   display: flex;
-  flex-direction: column;
   align-items: start;
   justify-content: space-between;
-  margin-bottom: 50px;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
-#HomeContent .HomeVideoCart div {
+.VideoCart p {
+  width: 267px;
+  height: auto;
+  color: #021d25;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.VideoCart h5 {
+  width: 320px;
+  color: #bece00;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  text-decoration: none;
+  text-transform: capitalize;
+  text-align: right;
+}
+.VideoCart div {
   width: 720px;
   height: 325px;
   position: relative;
   background: linear-gradient(0deg, #000203 0%, rgba(2, 29, 37, 0) 100%);
 }
-#HomeContent .HomeVideoCart div iframe {
+.VideoCart div iframe {
   width: 100%;
   height: 100%;
 }
-#HomeContent .HomeVideoCart div svg {
+.VideoCart div svg {
   position: absolute;
   top: 166px;
   left: 0;
 }
-#HomeContent .HomeVideoCart p {
-  width: 267px;
-  height: 55px;
-  color: #021d25;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 26px;
-}
-#HomeContent .HomeVideoCart h5 {
+.VideoCart h5 {
   width: 720px;
-  color: #bece00;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 26px;
-  text-align: right;
 }
 
-.HomeCart {
+.Cart {
   width: 380px;
   height: 550px;
   padding: 30px 30px 50px 30px;
   background-color: #f5f5f5;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-bottom: 50px;
+  cursor: pointer;
   display: flex;
-  flex-direction: column;
   align-items: start;
   justify-content: space-between;
-  margin-bottom: 50px;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
-.HomeCart div {
-  width: 316px;
-  height: 316px;
-  position: relative;
-}
-.HomeCart div img {
-  width: 100%;
-  height: 100%;
-}
-.HomeCart div h2 {
-  position: absolute;
-  top: 248px;
-  right: 37px;
-  color: #f5f5f5;
-  font-size: 32px;
-  font-weight: 600;
-}
-.HomeCart div svg {
-  position: absolute;
-  top: 125px;
-  left: 0;
-}
-.HomeCart p {
+.Cart p {
   width: 267px;
   height: auto;
   color: #021d25;
   font-size: 18px;
+  font-style: normal;
   font-weight: 500;
   line-height: 26px;
+  text-decoration: none;
+  text-transform: capitalize;
 }
-.HomeCart h5 {
+.Cart h5 {
   width: 320px;
   color: #bece00;
   font-size: 16px;
+  font-style: normal;
   font-weight: 600;
   line-height: 26px;
+  text-decoration: none;
+  text-transform: capitalize;
   text-align: right;
+}
+.Cart div {
+  width: 316px;
+  height: 316px;
+  position: relative;
+}
+.Cart div img {
+  width: 100%;
+  height: 100%;
+}
+.Cart div h2 {
+  position: absolute;
+  top: 248px;
+  right: 37px;
+  color: white;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.Cart div svg {
+  position: absolute;
+  top: 125px;
+  left: 0;
 }
 
 footer {
@@ -315,6 +350,8 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 footer .FooterContent {
   width: 1180px;
@@ -322,6 +359,8 @@ footer .FooterContent {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 footer .FooterContent .footerNav {
   width: 180px;
@@ -329,34 +368,42 @@ footer .FooterContent .footerNav {
   padding-left: 8px;
   border-left: 1px solid #bece00;
   display: flex;
-  flex-direction: column;
   align-items: start;
   justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 footer .FooterContent .footerNav nav {
   display: flex;
-  flex-direction: column;
   align-items: start;
   justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 footer .FooterContent .footerNav nav a {
-  color: #fff;
+  color: white;
   font-size: 16px;
+  font-style: normal;
   font-weight: 600;
   line-height: 26px;
   text-decoration: none;
+  text-transform: capitalize;
 }
 footer .FooterContent .footerNav .FollowUs {
   display: flex;
-  flex-direction: column;
   align-items: start;
-  justify-content: center;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 footer .FooterContent .footerNav .FollowUs h2 {
-  color: #fff;
+  color: white;
   font-size: 16px;
+  font-style: normal;
   font-weight: 600;
   line-height: 26px;
+  text-decoration: none;
+  text-transform: capitalize;
 }
 footer .FooterContent .footerNav .FollowUs nav {
   flex-direction: row;

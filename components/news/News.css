@@ -1,0 +1,144 @@
+@import "../../Style/style.css";
+header {
+  height: 399px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+#NewsImg {
+  width: 1440px;
+  height: 605px;
+  position: relative;
+  background: url("../../Images/News/Rectangle 40.png"), lightgray 50%/cover no-repeat;
+}
+#NewsImg h2 {
+  position: absolute;
+  right: 130px;
+  top: 312.5px;
+  color: #fff;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  text-decoration: none;
+  text-transform: capitalize;
+  text-align: right;
+}
+#NewsImg h1 {
+  position: absolute;
+  right: 130px;
+  top: 379.5px;
+  color: #bece00;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-decoration: none;
+  text-transform: capitalize;
+  text-align: right;
+}
+#NewsImg h5 {
+  position: absolute;
+  left: 130px;
+  top: 500px;
+  width: 780px;
+  height: 61px;
+  color: #f5f5f5;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+#NewsImg div {
+  width: 1439px;
+  height: 312.806px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(0deg, #000 0%, rgba(2, 29, 37, 0) 100%);
+}
+
+#NewsContent {
+  padding: 44px 0 65px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+#NewsContent .Cart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 1180px;
+  height: 250px;
+  padding: 0;
+}
+#NewsContent .Cart img {
+  width: 500px;
+  height: 250px;
+}
+#NewsContent .Cart div {
+  width: calc(100% - 500px - 43px);
+  height: 230px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+#NewsContent .Cart div h4 {
+  color: var(--back-and-M-text, #021d25);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+#NewsContent .Cart div h3 {
+  color: var(--back-and-M-text, #021d25);
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+#NewsContent .Cart div h6 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  width: 494px;
+  height: 115.358px;
+  color: var(--P-up-text, #022d3a);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+#NewsContent .Cart div h5 {
+  width: 611px;
+  text-align: right;
+}
+#NewsContent nav {
+  width: 196.883px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+#NewsContent nav a {
+  color: #022d3a;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: capitalize;
+}/*# sourceMappingURL=News.css.map */
