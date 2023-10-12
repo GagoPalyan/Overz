@@ -11,10 +11,16 @@
   flex-wrap: $flexWrap;
 }
 
-@mixin textStyle($size: 16px, $color: white, $weight: 600, $heigth: 26px) {
+@mixin textStyle(
+  $size: 16px,
+  $color: white,
+  $weight: 600,
+  $heigth: 26px,
+  $fontStyle: normal
+) {
   color: $color;
   font-size: $size;
-  font-style: normal;
+  font-style: $fontStyle;
   font-weight: $weight;
   line-height: $heigth;
   text-decoration: none;
