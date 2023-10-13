@@ -1,0 +1,17 @@
+@import "../../Style/style.css";
+@import "../../Style/variables";
+@import "../../Style/mixins";
+
+header {
+  height: 399px;
+  @include display($flexDirection: column);
+}
+
+#SkillsContent {
+  width: $desktop;
+  height: auto;
+  @include display($flexWrap: wrap);
+  .Cart {
+    @include cart($height: 400px);
+  }
+}

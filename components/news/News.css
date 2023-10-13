@@ -95,30 +95,34 @@ header {
   flex-wrap: nowrap;
 }
 #NewsContent .Cart div h4 {
-  color: var(--back-and-M-text, #021d25);
+  color: #021d25;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  text-decoration: none;
   text-transform: capitalize;
 }
 #NewsContent .Cart div h3 {
-  color: var(--back-and-M-text, #021d25);
+  color: #021d25;
   font-size: 20px;
   font-style: italic;
   font-weight: 700;
   line-height: normal;
+  text-decoration: none;
   text-transform: capitalize;
 }
 #NewsContent .Cart div h6 {
-  margin-top: 20px;
-  margin-bottom: 15px;
+  margin: 20px 0 15px 0;
   width: 494px;
   height: 115.358px;
-  color: var(--P-up-text, #022d3a);
+  color: #022d3a;
   font-size: 14px;
+  font-style: normal;
   font-weight: 400;
   line-height: 24px;
+  text-decoration: none;
+  text-transform: capitalize;
 }
 #NewsContent .Cart div h5 {
   width: 611px;
