@@ -85,8 +85,15 @@ header {
       height: auto;
       border-bottom: 2px solid #bece00;
       @include display;
+      #active {
+        @include textStyle(16px, #bece00);
+      }
       a {
+        width: 100px;
         @include textStyle;
+        &:hover {
+          @include textStyle(16px, #bece00, 800);
+        }
       }
     }
   }

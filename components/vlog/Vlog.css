@@ -31,7 +31,7 @@ header {
   height: 350px;
   top: 200px;
 }
-#VlogContent .VideoCart h5 {
+#VlogContent .VideoCart a {
   width: 1025px;
 }
 #VlogContent .Cart {

@@ -184,11 +184,30 @@ header .body nav {
   flex-direction: row;
   flex-wrap: nowrap;
 }
+header .body nav #active {
+  color: #bece00;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
 header .body nav a {
+  width: 100px;
   color: white;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
+  line-height: 26px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+header .body nav a:hover {
+  color: #bece00;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
   line-height: 26px;
   text-decoration: none;
   text-transform: capitalize;
