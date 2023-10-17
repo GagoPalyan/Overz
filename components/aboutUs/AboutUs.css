@@ -12,7 +12,7 @@ header {
   width: 1439px;
   height: 603px;
   position: relative;
-  background: url("../../Images/AboutUs/Rectangle 3.png"), lightgray 50%/cover no-repeat;
+  background: linear-gradient(to bottom, transparent 50%, black), url("../../Images/AboutUs/Rectangle 3.png");
 }
 #AboutImg h1 {
   position: absolute;
@@ -25,14 +25,6 @@ header {
   line-height: 26px;
   text-decoration: none;
   text-transform: capitalize;
-}
-#AboutImg div {
-  width: 1439px;
-  height: 312.806px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background: linear-gradient(0deg, #000 0%, rgba(2, 29, 37, 0) 100%);
 }
 
 #About {

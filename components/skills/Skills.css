@@ -42,7 +42,7 @@ header {
   text-decoration: none;
   text-transform: capitalize;
 }
-#SkillsContent .Cart h5 {
+#SkillsContent .Cart a {
   width: 320px;
   color: #bece00;
   font-size: 16px;

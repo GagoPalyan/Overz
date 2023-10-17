@@ -47,7 +47,7 @@ header {
   flex-direction: row;
   flex-wrap: nowrap;
 }
-#ContactUsContent .comArea {
+#ContactUsContent form {
   width: 447px;
   height: 375px;
   margin: 0 130px 50px 0;
@@ -61,7 +61,7 @@ header {
   flex-direction: column;
   flex-wrap: nowrap;
 }
-#ContactUsContent .comArea::before {
+#ContactUsContent form::before {
   content: "Send Us A Message";
   width: 315px;
   height: 48px;
@@ -76,14 +76,14 @@ header {
   text-decoration: none;
   text-transform: capitalize;
 }
-#ContactUsContent .comArea input {
+#ContactUsContent form input {
   width: 228px;
   height: 42px;
   outline: none;
   border: none;
   border-bottom: 1px solid #9f9b9b;
 }
-#ContactUsContent .comArea label {
+#ContactUsContent form label {
   margin-top: 22px;
   color: #887d7d;
   font-size: 14px;
@@ -94,7 +94,7 @@ header {
   text-transform: capitalize;
   margin-left: 14px;
 }
-#ContactUsContent .comArea textarea {
+#ContactUsContent form textarea {
   width: 373px;
   height: 165px;
   resize: none;
@@ -103,7 +103,7 @@ header {
   border-radius: 5px;
   border: 1px solid #9f9b9b;
 }
-#ContactUsContent .comArea button {
+#ContactUsContent form #button {
   margin-top: 8px;
   width: 76px;
   height: 37px;

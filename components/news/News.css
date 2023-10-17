@@ -12,7 +12,7 @@ header {
   width: 1440px;
   height: 605px;
   position: relative;
-  background: url("../../Images/News/Rectangle 40.png"), lightgray 50%/cover no-repeat;
+  background: linear-gradient(to bottom, transparent 50%, black), url("../../Images/News/Rectangle 40.png");
 }
 #NewsImg h2 {
   position: absolute;
@@ -53,14 +53,6 @@ header {
   line-height: 26px;
   text-decoration: none;
   text-transform: capitalize;
-}
-#NewsImg div {
-  width: 1439px;
-  height: 312.806px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background: linear-gradient(0deg, #000 0%, rgba(2, 29, 37, 0) 100%);
 }
 
 #NewsContent {
@@ -124,7 +116,7 @@ header {
   text-decoration: none;
   text-transform: capitalize;
 }
-#NewsContent .Cart div h5 {
+#NewsContent .Cart div a {
   width: 611px;
   text-align: right;
 }

@@ -11,21 +11,12 @@ header {
   width: 1439px;
   height: 603px;
   position: relative;
-  background: url("../../Images/AboutUs/Rectangle\ 3.png"),
-    lightgray 50% / cover no-repeat;
+  @include photoEfect(url("../../Images/AboutUs/Rectangle\ 3.png"));
   h1 {
     position: absolute;
     right: 130px;
     top: 463.5px;
     @include textStyle(64px, white, 800);
-  }
-  div {
-    width: 1439px;
-    height: 312.806px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    background: linear-gradient(0deg, #000 0%, rgba(2, 29, 37, 0) 100%);
   }
 }
 

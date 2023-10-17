@@ -41,9 +41,13 @@
     height: auto;
     @include textStyle(18px, #021d25, 500);
   }
-  h5 {
+  a {
     width: 320px;
     @include textStyle($color: #bece00);
     text-align: right;
   }
+}
+
+@mixin photoEfect($Photo, $Procent: 50%) {
+  background: linear-gradient(to bottom, transparent $Procent, black), $Photo;
 }

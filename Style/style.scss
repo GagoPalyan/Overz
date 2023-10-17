@@ -97,6 +97,9 @@ header {
     @include display;
     h2 {
       @include textStyle(14px, #000, 500, 17px);
+      a {
+        @include textStyle(14px, #000, 500, 17px);
+      }
     }
   }
 }
@@ -129,7 +132,7 @@ header {
       left: 0;
     }
   }
-  h5 {
+  a {
     width: 720px;
   }
 }

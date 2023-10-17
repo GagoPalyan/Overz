@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../Style/font.css" />
-    <link rel="stylesheet" href="ContactUs.css" />
+    <link rel="stylesheet" href="LogIn.css" />
     <link rel="icon" href="../../Images/Overz.svg" />
-    <title>Contact Us</title>
+    <title>Log In</title>
   </head>
   <body>
     <main>
@@ -44,28 +44,45 @@
           </nav>
         </div>
         <div class="foot">
-          <h2><a href="../../index.html">Home</a>/Contact Us</h2>
+          <h2>
+            <a href="../../index.html">Home</a>/<a href="Login.html">Log In</a
+            >/Sign Up
+          </h2>
         </div>
       </header>
-      <section id="ContactUsContent">
-        <img src="../../Images/Contact Us/unsplash_AlfXMSDNzxI.png" />
-        <div class="conUs">
-          <a href="">+(374)55 566 789</a>
-          <a href="">info@overz.am</a>
-          <nav>
-            <a href=""><img src="../../Images/webSites/telegram.svg" /></a>
-            <a href=""><img src="../../Images/webSites/instagram.svg" /></a>
-            <a href=""><img src="../../Images/webSites/facebook.svg" /></a>
-            <a href=""><img src="../../Images/webSites/linkedin.svg" /></a>
-            <a href=""><img src="../../Images/webSites/youtube.svg" /></a>
-          </nav>
+      <section id="SingUpContent">
+        <div>
+          <h3>Don’t Give Up. Go Up and Up. See You On Top</h3>
+          <h1>join us</h1>
         </div>
         <form action="">
-          <input type="text" placeholder="name" />
-          <input type="email" placeholder="e-mail" />
-          <label for="com">Message</label>
-          <textarea id="com"></textarea>
-          <input id="button" type="submit" value="Send" />
+          <h2>Sign Up</h2>
+          <div>
+            <input type="text" placeholder="name" required />
+            <input type="text" placeholder="lastname" required />
+          </div>
+          <input type="email" placeholder="e-mail" required />
+          <div>
+            <input type="text" placeholder="gender" required />
+            <input type="text" placeholder="birth date" required />
+          </div>
+          <div class="radio">
+            <p>level</p>
+            <div>
+              <input name="level" id="Beginner" type="radio" />
+              <label for="Beginner">Beginner</label>
+            </div>
+            <div>
+              <input name="level" id="Intermediate" type="radio" />
+              <label for="Intermediate">Intermediate</label>
+            </div>
+            <div>
+              <input name="level" id="Advanced" type="radio" />
+              <label for="Advanced">Advanced</label>
+            </div>
+          </div>
+          <input type="text" placeholder="password" minlength="8" required />
+          <input id="button" type="submit" value="Sign Up" />
         </form>
       </section>
       <footer>
