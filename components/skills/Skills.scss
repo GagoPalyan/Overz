@@ -8,7 +8,7 @@ header {
 }
 
 #SkillsContent {
-  width: $desktop;
+  width: $content;
   height: auto;
   @include display($flexWrap: wrap);
   .Cart {

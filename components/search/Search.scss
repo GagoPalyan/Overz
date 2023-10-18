@@ -1,0 +1,28 @@
+@import "../../Style/style.css";
+@import "../../Style/variables";
+@import "../../Style/mixins";
+
+header {
+  height: 399px;
+  @include display($flexDirection: column);
+}
+
+#SearchContent {
+  width: $content;
+  height: auto;
+  padding-bottom: 300px;
+  @include display(start, start, column);
+  .searchInput {
+    width: 255px;
+    height: auto;
+    @include display;
+    input {
+      width: 228px;
+      height: 42px;
+      border: none;
+      border-bottom: 1px solid #021d25;
+      outline: none;
+      @include textStyle(16px, #1c1b1b, 400, 30px);
+    }
+  }
+}

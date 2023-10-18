@@ -8,7 +8,7 @@ header {
 }
 
 #VlogContent {
-  width: $desktop;
+  width: $content;
   height: auto;
   @include display($flexWrap: wrap);
   .VideoCart {

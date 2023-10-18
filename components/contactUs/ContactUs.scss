@@ -8,8 +8,8 @@ header {
 }
 
 #ContactUsContent {
-  width: 1440px;
-  height: 600px;
+  width: $desktop;
+  height: 601px;
   background: #3b4850;
   margin-bottom: 50px;
   @include display($alignItem: end);

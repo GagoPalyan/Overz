@@ -9,10 +9,11 @@ header {
 }
 
 #AboutImg {
-  width: 1439px;
+  width: 1440px;
   height: 603px;
   position: relative;
   background: linear-gradient(to bottom, transparent 50%, black), url("../../Images/AboutUs/Rectangle 3.png");
+  background-size: cover;
 }
 #AboutImg h1 {
   position: absolute;

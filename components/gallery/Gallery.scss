@@ -8,7 +8,7 @@ header {
 }
 
 #GalleryContent {
-  width: $desktop;
+  width: $content;
   height: auto;
   @include display($flexWrap: wrap);
   .Cart {

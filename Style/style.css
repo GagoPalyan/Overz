@@ -65,16 +65,6 @@
   font-family: Poppins;
 }
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
 button {
   cursor: pointer;
 }
@@ -127,6 +117,18 @@ header .head .nav div {
 header .head .nav div:hover a {
   border-bottom: 1px solid #021d25;
 }
+header .head .nav div p {
+  border-bottom: 1px solid rgba(2, 29, 37, 0);
+  color: #021d25;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17px;
+  text-decoration: none;
+  text-transform: capitalize;
+  margin: 0;
+  cursor: pointer;
+}
 header .head .nav div a {
   border-bottom: 1px solid rgba(2, 29, 37, 0);
   color: #021d25;
@@ -146,6 +148,30 @@ header .head .nav .Search {
 }
 header .head .nav .FollowUs {
   width: 66px;
+  height: 100%;
+  position: relative;
+}
+header .head .nav .FollowUs:hover nav {
+  display: flex;
+}
+header .head .nav .FollowUs nav {
+  position: absolute;
+  bottom: -30px;
+  left: -41px;
+  width: 150px;
+  height: 30px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  display: none;
+}
+header .head .nav .FollowUs nav a {
+  border: none;
 }
 header .head .nav .LogIn {
   width: 72px;

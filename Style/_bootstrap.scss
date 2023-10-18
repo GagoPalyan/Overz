@@ -1,8 +1,8 @@
 @import "./variables";
 
 .w-100 {
-  width: 1440px !important;
-  min-width: $desktop !important;
+  width: $desktop !important;
+  min-width: $content !important;
   height: 551px !important;
 }
 .carousel-indicators [data-bs-target] {
@@ -19,7 +19,7 @@
   align-items: center;
   justify-content: center;
   .carouselTextH {
-    width: $desktop;
+    width: $content;
     height: 157px;
     display: flex;
     flex-direction: column;
@@ -43,7 +43,7 @@
     }
   }
   .carouselTextP {
-    width: $desktop;
+    width: $content;
     height: 132px;
     p {
       color: #f5f5f5;

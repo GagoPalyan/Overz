@@ -8,7 +8,7 @@ header {
 }
 
 #LogInContent {
-  width: 1440px;
+  width: $desktop;
   height: 600px;
   background: #3b4850;
   margin-bottom: 50px;
@@ -78,7 +78,7 @@ header {
 }
 
 #SingUpContent {
-  width: 1440px;
+  width: $desktop;
   height: 650px;
   background: #3b4850;
   margin-bottom: 50px;

@@ -8,7 +8,7 @@ header {
 }
 
 #NewsImg {
-  width: 1440px;
+  width: $desktop;
   height: 605px;
   position: relative;
   @include photoEfect(url("../../Images/News/Rectangle\ 40.png"), 50%);

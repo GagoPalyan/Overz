@@ -8,10 +8,11 @@ header {
 }
 
 #AboutImg {
-  width: 1439px;
+  width: $desktop;
   height: 603px;
   position: relative;
   @include photoEfect(url("../../Images/AboutUs/Rectangle\ 3.png"));
+  background-size: cover;
   h1 {
     position: absolute;
     right: 130px;
@@ -21,7 +22,7 @@ header {
 }
 
 #About {
-  width: $desktop;
+  width: $content;
   height: 500px;
   margin: 50px 0;
   @include display;
@@ -48,7 +49,7 @@ header {
 }
 
 #AboutUsContent {
-  width: $desktop;
+  width: $content;
   height: auto;
   @include display($flexWrap: wrap);
 }

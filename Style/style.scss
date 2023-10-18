@@ -9,16 +9,6 @@
   font-family: Poppins;
 }
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
 button {
   cursor: pointer;
 }
@@ -34,7 +24,7 @@ header {
   height: 299px;
   @include display($flexDirection: column);
   .head {
-    width: $desktop;
+    width: $content;
     height: 50px;
     @include display(end);
     .nav {
@@ -46,6 +36,12 @@ header {
         @include display;
         &:hover a {
           border-bottom: 1px solid #021d25;
+        }
+        p {
+          border-bottom: 1px solid #021d2500;
+          @include textStyle(14px, #021d25, 500, 17px);
+          margin: 0;
+          cursor: pointer;
         }
         a {
           border-bottom: 1px solid #021d2500;
@@ -61,6 +57,26 @@ header {
       }
       .FollowUs {
         width: 66px;
+        height: 100%;
+        position: relative;
+        &:hover nav {
+          display: flex;
+        }
+        nav {
+          position: absolute;
+          bottom: -30px;
+          left: -41px;
+          width: 150px;
+          height: 30px;
+          background-color: white;
+          border-radius: 10px;
+          padding: 0 5px;
+          @include display;
+          display: none;
+          a {
+            border: none;
+          }
+        }
       }
       .LogIn {
         width: 72px;
@@ -81,7 +97,7 @@ header {
     padding: 12px 0 30px 0;
     background: var(--back-and-M-text, #021d25);
     nav {
-      width: $desktop;
+      width: $content;
       height: auto;
       border-bottom: 2px solid #bece00;
       @include display;
@@ -98,7 +114,7 @@ header {
     }
   }
   .foot {
-    width: $desktop;
+    width: $content;
     height: 101px;
     padding-left: 39px;
     @include display;
@@ -112,12 +128,12 @@ header {
 }
 
 #HomeCarousel {
-  width: 1440px;
+  width: $desktop;
   height: 551px;
 }
 
 #HomeContent {
-  width: $desktop;
+  width: $content;
   height: auto;
   padding: 50px 0;
   @include display($flexWrap: wrap);
@@ -173,7 +189,7 @@ footer {
   background: #021d25;
   @include display(center);
   .FooterContent {
-    width: $desktop;
+    width: $content;
     height: 177px;
     @include display;
     .footerNav {

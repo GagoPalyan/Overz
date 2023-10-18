@@ -1,0 +1,43 @@
+@import "../../Style/style.css";
+header {
+  height: 399px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+#SearchContent {
+  width: 1180px;
+  height: auto;
+  padding-bottom: 300px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+#SearchContent .searchInput {
+  width: 255px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+#SearchContent .searchInput input {
+  width: 228px;
+  height: 42px;
+  border: none;
+  border-bottom: 1px solid #021d25;
+  outline: none;
+  color: #1c1b1b;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-decoration: none;
+  text-transform: capitalize;
+}/*# sourceMappingURL=Search.css.map */
