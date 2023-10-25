@@ -1,2 +1,45 @@
-$content: 1180px;
-$desktop: 1440px;
+:root {
+  --desktop: 1440px;
+  --content: 1180px;
+}
+
+$desktop: var(--desktop);
+$content: var(--content);
+
+@media screen and (max-width: 1440px) {
+  :root {
+    --desktop: 100%;
+    --content: 1180px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  :root {
+    --desktop: 100%;
+    --content: 780px;
+    .carousel1 .carouselTextH h1 {
+      font-size: 52px;
+    }
+    header .head {
+      width: 95%;
+    }
+    header .body nav {
+      width: 95%;
+    }
+    header .foot {
+      width: 95%;
+    }
+    header .body nav a,
+    header .body nav a:hover,
+    header .body nav #active {
+      font-size: 14px;
+    }
+    footer .FooterContent {
+      width: 95%;
+    }
+  }
+}
+@media screen and (max-width: 780px) {
+  :root {
+    --content: 540px;
+  }
+}

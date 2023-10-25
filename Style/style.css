@@ -1,6 +1,90 @@
+:root {
+  --desktop: 1440px;
+  --content: 1180px;
+}
+
+@media screen and (max-width: 1440px) {
+  :root {
+    --desktop: 100%;
+    --content: 1180px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  :root {
+    --desktop: 100%;
+    --content: 780px;
+  }
+  :root .carousel1 .carouselTextH h1 {
+    font-size: 52px;
+  }
+  :root header .head {
+    width: 95%;
+  }
+  :root header .body nav {
+    width: 95%;
+  }
+  :root header .foot {
+    width: 95%;
+  }
+  :root header .body nav a,
+  :root header .body nav a:hover,
+  :root header .body nav #active {
+    font-size: 14px;
+  }
+  :root footer .FooterContent {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 780px) {
+  :root {
+    --content: 540px;
+  }
+}
+:root {
+  --desktop: 1440px;
+  --content: 1180px;
+}
+
+@media screen and (max-width: 1440px) {
+  :root {
+    --desktop: 100%;
+    --content: 1180px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  :root {
+    --desktop: 100%;
+    --content: 780px;
+  }
+  :root .carousel1 .carouselTextH h1 {
+    font-size: 52px;
+  }
+  :root header .head {
+    width: 95%;
+  }
+  :root header .body nav {
+    width: 95%;
+  }
+  :root header .foot {
+    width: 95%;
+  }
+  :root header .body nav a,
+  :root header .body nav a:hover,
+  :root header .body nav #active {
+    font-size: 14px;
+  }
+  :root footer .FooterContent {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 780px) {
+  :root {
+    --content: 540px;
+  }
+}
 .w-100 {
-  width: 1440px !important;
-  min-width: 1180px !important;
+  width: var(--desktop) !important;
+  min-width: var(--content) !important;
   height: 551px !important;
 }
 
@@ -19,7 +103,7 @@
   justify-content: center;
 }
 .carousel1 .carouselTextH {
-  width: 1180px;
+  width: var(--content);
   height: 157px;
   display: flex;
   flex-direction: column;
@@ -43,7 +127,7 @@
   text-transform: capitalize;
 }
 .carousel1 .carouselTextP {
-  width: 1180px;
+  width: var(--content);
   height: 132px;
 }
 .carousel1 .carouselTextP p {
@@ -89,7 +173,7 @@ header {
   flex-wrap: nowrap;
 }
 header .head {
-  width: 1180px;
+  width: var(--content);
   height: 50px;
   display: flex;
   align-items: center;
@@ -114,9 +198,6 @@ header .head .nav div {
   flex-direction: row;
   flex-wrap: nowrap;
 }
-header .head .nav div:hover a {
-  border-bottom: 1px solid #021d25;
-}
 header .head .nav div p {
   border-bottom: 1px solid rgba(2, 29, 37, 0);
   color: #021d25;
@@ -138,13 +219,18 @@ header .head .nav div a {
   line-height: 17px;
   text-decoration: none;
   text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 header .head .nav div img {
   width: 24px;
   height: 24px;
 }
 header .head .nav .Search {
-  width: 76px;
+  width: 78px;
 }
 header .head .nav .FollowUs {
   width: 66px;
@@ -201,7 +287,7 @@ header .body {
   background: var(--back-and-M-text, #021d25);
 }
 header .body nav {
-  width: 1180px;
+  width: var(--content);
   height: auto;
   border-bottom: 2px solid #bece00;
   display: flex;
@@ -220,7 +306,6 @@ header .body nav #active {
   text-transform: capitalize;
 }
 header .body nav a {
-  width: 100px;
   color: white;
   font-size: 16px;
   font-style: normal;
@@ -233,13 +318,14 @@ header .body nav a:hover {
   color: #bece00;
   font-size: 16px;
   font-style: normal;
-  font-weight: 800;
+  font-weight: 600;
   line-height: 26px;
   text-decoration: none;
   text-transform: capitalize;
 }
-header .foot {
-  width: 1180px;
+
+#pageTitle {
+  width: var(--content);
   height: 101px;
   padding-left: 39px;
   display: flex;
@@ -248,7 +334,7 @@ header .foot {
   flex-direction: row;
   flex-wrap: nowrap;
 }
-header .foot h2 {
+#pageTitle h2 {
   color: #000;
   font-size: 14px;
   font-style: normal;
@@ -257,7 +343,7 @@ header .foot h2 {
   text-decoration: none;
   text-transform: capitalize;
 }
-header .foot h2 a {
+#pageTitle h2 a {
   color: #000;
   font-size: 14px;
   font-style: normal;
@@ -268,12 +354,12 @@ header .foot h2 a {
 }
 
 #HomeCarousel {
-  width: 1440px;
+  width: var(--desktop);
   height: 551px;
 }
 
 #HomeContent {
-  width: 1180px;
+  width: var(--content);
   height: auto;
   padding: 50px 0;
   display: flex;
@@ -412,7 +498,7 @@ footer {
   flex-wrap: nowrap;
 }
 footer .FooterContent {
-  width: 1180px;
+  width: var(--content);
   height: 177px;
   display: flex;
   align-items: center;

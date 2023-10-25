@@ -1,15 +1,48 @@
 @import "../../Style/style.css";
-header {
-  height: 399px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-  flex-wrap: nowrap;
+:root {
+  --desktop: 1440px;
+  --content: 1180px;
 }
 
+@media screen and (max-width: 1440px) {
+  :root {
+    --desktop: 100%;
+    --content: 1180px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  :root {
+    --desktop: 100%;
+    --content: 780px;
+  }
+  :root .carousel1 .carouselTextH h1 {
+    font-size: 52px;
+  }
+  :root header .head {
+    width: 95%;
+  }
+  :root header .body nav {
+    width: 95%;
+  }
+  :root header .foot {
+    width: 95%;
+  }
+  :root header .body nav a,
+  :root header .body nav a:hover,
+  :root header .body nav #active {
+    font-size: 14px;
+  }
+  :root footer .FooterContent {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 780px) {
+  :root {
+    --content: 540px;
+  }
+}
 #GalleryContent {
-  width: 1180px;
+  width: var(--content);
   height: auto;
   display: flex;
   align-items: center;

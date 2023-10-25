@@ -2,11 +2,6 @@
 @import "../../Style/variables";
 @import "../../Style/mixins";
 
-header {
-  height: 399px;
-  @include display($flexDirection: column);
-}
-
 #NewsImg {
   width: $desktop;
   height: 605px;

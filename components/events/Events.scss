@@ -2,11 +2,6 @@
 @import "../../Style/variables";
 @import "../../Style/mixins";
 
-header {
-  height: 399px;
-  @include display($flexDirection: column);
-}
-
 #EventsContent {
   width: $content;
   height: auto;
