@@ -35,6 +35,18 @@
   :root footer .FooterContent {
     width: 95%;
   }
+  #NewsContent .Cart {
+    width: 780px;
+  }
+  #NewsContent .Cart img {
+    width: 250px;
+  }
+  #NewsContent .Cart div {
+    width: calc(100% - 250px - 20px);
+  }
+  #NewsContent .Cart div a {
+    width: 500px;
+  }
 }
 @media screen and (max-width: 780px) {
   :root {
@@ -279,17 +291,6 @@
   text-decoration: none;
   text-transform: capitalize;
 }
-#SingUpContent form a {
-  margin-left: 132px;
-  color: #887d7d;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-decoration: none;
-  text-transform: capitalize;
-  margin-bottom: 42px;
-}
 #SingUpContent form #button {
   margin-top: 47px;
   margin-left: 353px;
@@ -306,4 +307,14 @@
   line-height: 17px;
   text-decoration: none;
   text-transform: capitalize;
+}
+
+@media screen and (max-width: 1200px) {
+  #LogInContent {
+    padding: 0 20px 50px 20px;
+  }
+  #SingUpContent {
+    height: 600px;
+    padding: 15px 20px;
+  }
 }/*# sourceMappingURL=LogIn.css.map */

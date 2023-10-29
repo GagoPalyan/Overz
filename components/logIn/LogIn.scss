@@ -140,11 +140,6 @@
         }
       }
     }
-    a {
-      margin-left: 132px;
-      @include textStyle(12px, #887d7d, 400, normal);
-      margin-bottom: 42px;
-    }
     #button {
       margin-top: 47px;
       margin-left: 353px;
@@ -156,5 +151,84 @@
       background: #bece00;
       @include textStyle(14px, #f5f5f5, 600, 17px);
     }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #LogInContent {
+    padding: 0 20px 50px 20px;
+  }
+  #SingUpContent {
+    height: 600px;
+    padding: 15px 20px;
+    // div {
+    //   width: 200px;
+    //   h3 {
+    //     @include textStyle(22px, #fff, 600, normal);
+    //   }
+    //   h1 {
+    //     @include textStyle(34px, #bece00, 800, 50px);
+    //   }
+    // }
+    // form {
+    //   width: 250px;
+    //   height: 550px;
+    //   padding: 27px 18px 18px 18px;
+    //   border-radius: 5px;
+    //   background-color: white;
+    //   position: relative;
+    //   @include display(space-between, center, column);
+    //   h2 {
+    //     &:nth-child(1) {
+    //       margin-bottom: 10px;
+    //     }
+    //   }
+    //   div {
+    //     width: 100%;
+    //     @include display($flexDirection: column);
+    //   }
+    //   input {
+    //     width: 150px;
+    //     height: 42px;
+    //     margin-top: 15px;
+    //     outline: none;
+    //     border: none;
+    //     border-bottom: 1px solid #9f9b9b;
+    //   }
+    //   .radio {
+    //     width: 150px;
+    //     height: auto;
+    //     margin-top: 10px;
+    //     @include display(space-between, start, column);
+    //     p {
+    //       @include textStyle(14px, #887d7d, 500, 17px);
+    //     }
+    //     div {
+    //       @include display(start);
+    //       margin-top: 12px;
+    //       input {
+    //         width: 12px;
+    //         height: 12px;
+    //         margin-left: 10px;
+    //       }
+    //       label {
+    //         margin-left: 2px;
+    //         cursor: pointer;
+    //         @include textStyle(14px, #887d7d, 500, 17px);
+    //       }
+    //     }
+    //   }
+    //   #button {
+    //     width: 154px;
+    //     height: 44px;
+    //     padding: 16px 32px;
+    //     border: none;
+    //     border-radius: 5px;
+    //     background: #bece00;
+    //     @include textStyle(14px, #f5f5f5, 600, 17px);
+    //     margin: 0;
+    //     margin-top: 10px;
+    //   }
+    // }
   }
 }

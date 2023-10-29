@@ -35,6 +35,18 @@
   :root footer .FooterContent {
     width: 95%;
   }
+  #NewsContent .Cart {
+    width: 780px;
+  }
+  #NewsContent .Cart img {
+    width: 250px;
+  }
+  #NewsContent .Cart div {
+    width: calc(100% - 250px - 20px);
+  }
+  #NewsContent .Cart div a {
+    width: 500px;
+  }
 }
 @media screen and (max-width: 780px) {
   :root {
@@ -89,4 +101,35 @@ section nav a {
   line-height: 18px;
   text-decoration: none;
   text-transform: capitalize;
+}
+
+@media screen and (max-width: 1200px) {
+  #VlogContent {
+    width: var(--content);
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #VlogContent .VideoCart {
+    width: 780px;
+    height: 500px;
+    padding: 50px 20px 45px 20px;
+  }
+  #VlogContent .VideoCart div {
+    width: 740px;
+    height: 350px;
+  }
+  #VlogContent .VideoCart div svg {
+    width: 740px;
+    top: 25px;
+  }
+  #VlogContent .VideoCart a {
+    width: 730px;
+  }
+  #VlogContent .Cart {
+    height: 500px;
+  }
 }/*# sourceMappingURL=Vlog.css.map */

@@ -35,6 +35,18 @@
   :root footer .FooterContent {
     width: 95%;
   }
+  #NewsContent .Cart {
+    width: 780px;
+  }
+  #NewsContent .Cart img {
+    width: 250px;
+  }
+  #NewsContent .Cart div {
+    width: calc(100% - 250px - 20px);
+  }
+  #NewsContent .Cart div a {
+    width: 500px;
+  }
 }
 @media screen and (max-width: 780px) {
   :root {
@@ -170,4 +182,28 @@
   line-height: 18px;
   text-decoration: none;
   text-transform: capitalize;
+}
+
+@media screen and (max-width: 1200px) {
+  #NewsImg h2 {
+    right: 20px;
+  }
+  #NewsImg h1 {
+    right: 20px;
+  }
+  #NewsImg h5 {
+    left: 20px;
+  }
+  #NewsContent .Cart {
+    width: 780px;
+  }
+  #NewsContent .Cart img {
+    width: 250px;
+  }
+  #NewsContent .Cart div {
+    width: calc(100% - 250px - 20px);
+  }
+  #NewsContent .Cart div a {
+    width: 500px;
+  }
 }/*# sourceMappingURL=News.css.map */

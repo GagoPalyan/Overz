@@ -48,3 +48,34 @@
   height: auto;
   @include display($flexWrap: wrap);
 }
+
+@media screen and (max-width: 1200px) {
+  #AboutImg {
+    @include photoEfect(
+      url("../../Images/AboutUs/Rectangle\ 3.png") center center
+    );
+    margin-bottom: 50px;
+    position: relative;
+    h1 {
+      right: 20px;
+      top: 25px;
+    }
+    &::before {
+      content: "What we're about";
+      @include textStyle(20px, #f5f5f5, 500);
+      position: absolute;
+      top: 120px;
+      margin: 20px;
+    }
+    &::after {
+      content: "NOTE: Hudson Valley Hikers Events are by RSVP only on events posted to the calendar. Any other activity with members that is organized offline, in Meetup Discussions, or private messages; is not sanctioned by Hudson Valley Hikers and participation is at your own risk. Please contact Meetup directly if you have any questions or concerns.CHALLENGE YOURSELFFree outdoors group with no fees everWe are the largest and most active outdoors Meetup group in the world!Outdoors enthusiasts!!! The purpose of this group is to bring people together. People who like being outside, hiking, backpacking, camping, kayaking, cycling, mountaineering, skiing/riding, rock/ice climbing, caving, etc. This is an extremely active group with a full calendar and over 34,000 members!";
+      @include textStyle(18px, #f5f5f5, 400, 25px);
+      position: absolute;
+      top: 150px;
+      margin: 20px;
+    }
+  }
+  #About {
+    display: none;
+  }
+}

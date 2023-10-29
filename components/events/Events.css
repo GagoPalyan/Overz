@@ -35,6 +35,18 @@
   :root footer .FooterContent {
     width: 95%;
   }
+  #NewsContent .Cart {
+    width: 780px;
+  }
+  #NewsContent .Cart img {
+    width: 250px;
+  }
+  #NewsContent .Cart div {
+    width: calc(100% - 250px - 20px);
+  }
+  #NewsContent .Cart div a {
+    width: 500px;
+  }
 }
 @media screen and (max-width: 780px) {
   :root {

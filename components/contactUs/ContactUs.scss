@@ -5,14 +5,14 @@
 #ContactUsContent {
   width: $desktop;
   height: 601px;
-  background: #3b4850;
+  background-image: url(../../Images/Contact\ Us/contactUs.png);
   margin-bottom: 50px;
-  @include display($alignItem: end);
+  padding: 0 130px 50px 0;
+  @include display(end, end);
   .conUs {
     width: 127px;
     height: 86px;
-    margin-left: 300px;
-    margin-bottom: 50px;
+    margin-right: 33px;
     @include display($alignItem: start, $flexDirection: column);
     a {
       @include textStyle(14px, #fff, 500, normal);
@@ -25,7 +25,6 @@
   form {
     width: 447px;
     height: 375px;
-    margin: 0 130px 50px 0;
     padding: 15px 37px;
     border-radius: 5px;
     background-color: white;

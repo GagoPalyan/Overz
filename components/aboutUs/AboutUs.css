@@ -35,6 +35,18 @@
   :root footer .FooterContent {
     width: 95%;
   }
+  #NewsContent .Cart {
+    width: 780px;
+  }
+  #NewsContent .Cart img {
+    width: 250px;
+  }
+  #NewsContent .Cart div {
+    width: calc(100% - 250px - 20px);
+  }
+  #NewsContent .Cart div a {
+    width: 500px;
+  }
 }
 @media screen and (max-width: 780px) {
   :root {
@@ -120,4 +132,45 @@
   justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1200px) {
+  #AboutImg {
+    background: linear-gradient(to bottom, transparent 50%, black), url("../../Images/AboutUs/Rectangle 3.png") center center;
+    margin-bottom: 50px;
+    position: relative;
+  }
+  #AboutImg h1 {
+    right: 20px;
+    top: 25px;
+  }
+  #AboutImg::before {
+    content: "What we're about";
+    color: #f5f5f5;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    text-decoration: none;
+    text-transform: capitalize;
+    position: absolute;
+    top: 120px;
+    margin: 20px;
+  }
+  #AboutImg::after {
+    content: "NOTE: Hudson Valley Hikers Events are by RSVP only on events posted to the calendar. Any other activity with members that is organized offline, in Meetup Discussions, or private messages; is not sanctioned by Hudson Valley Hikers and participation is at your own risk. Please contact Meetup directly if you have any questions or concerns.CHALLENGE YOURSELFFree outdoors group with no fees everWe are the largest and most active outdoors Meetup group in the world!Outdoors enthusiasts!!! The purpose of this group is to bring people together. People who like being outside, hiking, backpacking, camping, kayaking, cycling, mountaineering, skiing/riding, rock/ice climbing, caving, etc. This is an extremely active group with a full calendar and over 34,000 members!";
+    color: #f5f5f5;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    text-decoration: none;
+    text-transform: capitalize;
+    position: absolute;
+    top: 150px;
+    margin: 20px;
+  }
+  #About {
+    display: none;
+  }
 }/*# sourceMappingURL=AboutUs.css.map */

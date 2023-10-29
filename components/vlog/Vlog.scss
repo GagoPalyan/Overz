@@ -39,3 +39,30 @@ section {
     }
   }
 }
+
+@media screen and (max-width: 1200px) {
+  #VlogContent {
+    width: $content;
+    height: auto;
+    @include display($flexWrap: wrap);
+    .VideoCart {
+      width: 780px;
+      height: 500px;
+      padding: 50px 20px 45px 20px;
+      div {
+        width: 740px;
+        height: 350px;
+        svg {
+          width: 740px;
+          top: 25px;
+        }
+      }
+      a {
+        width: 730px;
+      }
+    }
+    .Cart {
+      height: 500px;
+    }
+  }
+}

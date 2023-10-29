@@ -37,7 +37,22 @@ $content: var(--content);
       width: 95%;
     }
   }
+  #NewsContent {
+    .Cart {
+      width: 780px;
+      img {
+        width: 250px;
+      }
+      div {
+        width: calc(100% - 250px - 20px);
+        a {
+          width: 500px;
+        }
+      }
+    }
+  }
 }
+
 @media screen and (max-width: 780px) {
   :root {
     --content: 540px;

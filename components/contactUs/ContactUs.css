@@ -35,6 +35,18 @@
   :root footer .FooterContent {
     width: 95%;
   }
+  #NewsContent .Cart {
+    width: 780px;
+  }
+  #NewsContent .Cart img {
+    width: 250px;
+  }
+  #NewsContent .Cart div {
+    width: calc(100% - 250px - 20px);
+  }
+  #NewsContent .Cart div a {
+    width: 500px;
+  }
 }
 @media screen and (max-width: 780px) {
   :root {
@@ -44,19 +56,19 @@
 #ContactUsContent {
   width: var(--desktop);
   height: 601px;
-  background: #3b4850;
+  background-image: url(../../Images/Contact\ Us/contactUs.png);
   margin-bottom: 50px;
+  padding: 0 130px 50px 0;
   display: flex;
   align-items: end;
-  justify-content: space-between;
+  justify-content: end;
   flex-direction: row;
   flex-wrap: nowrap;
 }
 #ContactUsContent .conUs {
   width: 127px;
   height: 86px;
-  margin-left: 300px;
-  margin-bottom: 50px;
+  margin-right: 33px;
   display: flex;
   align-items: start;
   justify-content: space-between;
@@ -83,7 +95,6 @@
 #ContactUsContent form {
   width: 447px;
   height: 375px;
-  margin: 0 130px 50px 0;
   padding: 15px 37px;
   border-radius: 5px;
   background-color: white;
