@@ -10,3 +10,13 @@
     @include cart($height: 400px);
   }
 }
+
+@media screen and (max-width: 820px) {
+  #SkillsContent {
+    .Cart {
+      width: 234px;
+      height: 234px;
+      padding: 7px;
+    }
+  }
+}

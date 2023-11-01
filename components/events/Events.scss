@@ -18,3 +18,16 @@
     }
   }
 }
+
+@media screen and (max-width: 820px) {
+  #EventsContent .Cart {
+    width: 250px;
+    height: 250px;
+    padding: 15px;
+    div h2 {
+      top: 150px;
+      width: 100px;
+      font-size: 20px;
+    }
+  }
+}

@@ -42,6 +42,7 @@
     img {
       width: 500px;
       height: 250px;
+      border-radius: 5px;
     }
     div {
       width: calc(100% - 500px - 43px);
@@ -100,5 +101,87 @@
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 820px) {
+  #NewsImg {
+    height: 500px;
+    @include photoEfect(
+      url("../../Images/News/Rectangle\ 3.png") center center,
+      50%
+    );
+    background-size: cover;
+    h2 {
+      top: 330px;
+      width: 540px;
+      @include textStyle(24px, #fff, 600, 27px);
+    }
+    h1 {
+      top: 370px;
+      width: 540px;
+      @include textStyle(24px, #bece00, 600, 27px);
+    }
+    h5 {
+      top: 420px;
+      width: 520px;
+      @include textStyle(14px, #f5f5f5, 400, 18px);
+    }
+  }
+  #NewsContent {
+    .Cart {
+      width: 540px;
+      height: 175px;
+      padding: 0;
+      img {
+        width: 125px;
+        height: 175px;
+      }
+      div {
+        width: calc(100% - 125px - 10px);
+        height: 170px;
+        @include display(start, start, column);
+        position: relative;
+        h4,
+        h3 {
+          @include textStyle(14px, #021d25, 600, normal);
+        }
+        h6 {
+          @include textStyle(14px, #887d7d, 400, 18px);
+          overflow: hidden;
+          width: 380px;
+          height: 70.435px;
+          &::before {
+            content: "";
+            width: 70.418px;
+            height: 0px;
+            border-bottom: 2px solid #bece00;
+            position: absolute;
+            top: 50px;
+            left: 0;
+          }
+          &::after {
+            content: "29 july 2023";
+            color: black;
+            position: absolute;
+            top: 145px;
+            right: 15px;
+            @include textStyle(14px, #887d7d, 400, 15px);
+          }
+        }
+      }
+    }
+    a {
+      width: 611px;
+      text-align: right;
+    }
+  }
+}
+nav {
+  width: 196.883px;
+  height: 18px;
+  @include display;
+  a {
+    @include textStyle(12px, #022d3a, 500, 18px);
   }
 }
