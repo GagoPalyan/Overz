@@ -183,7 +183,7 @@
     line-height: 15px;
   }
   :root .VideoCart {
-    width: 540px;
+    width: 520px;
     height: 335px;
     padding: 30px 30px 50px 30px;
     background-color: #f5f5f5;
@@ -220,7 +220,7 @@
     text-align: right;
   }
   :root .VideoCart div {
-    width: 510px;
+    width: 490px;
     height: 250px;
   }
   :root .VideoCart p {
@@ -306,6 +306,146 @@
   }
   :root .Cart a {
     display: none;
+  }
+}
+@media screen and (max-width: 540px) {
+  :root {
+    --desktop: 100%;
+    --content: 288px;
+  }
+  :root .w-100 {
+    height: 288px !important;
+  }
+  :root .carousel1 .carouselTextP p {
+    width: var(--content);
+    font-size: 10px;
+  }
+  :root #HomeContent {
+    padding: 32px 0;
+  }
+  :root .VideoCart {
+    width: 288px;
+    height: 240px;
+    padding: 30px 30px 50px 30px;
+    background-color: #f5f5f5;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 16px;
+  }
+  :root .VideoCart p {
+    width: 267px;
+    height: auto;
+    color: #021d25;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+  :root .VideoCart a {
+    width: 320px;
+    color: #bece00;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: right;
+  }
+  :root .VideoCart div {
+    width: 257px;
+    height: 144px;
+  }
+  :root .VideoCart p {
+    width: 100px;
+    color: #021d25;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+  :root .Cart {
+    width: 134px;
+    height: 222px;
+    padding: 30px 30px 50px 30px;
+    background-color: #f5f5f5;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 7px;
+  }
+  :root .Cart p {
+    width: 267px;
+    height: auto;
+    color: #021d25;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+  :root .Cart a {
+    width: 320px;
+    color: #bece00;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: right;
+  }
+  :root .Cart div {
+    width: 120px;
+    height: 120px;
+  }
+  :root .Cart div img {
+    width: 100%;
+    height: 100%;
+  }
+  :root .Cart div h2 {
+    position: absolute;
+    top: 88px;
+    right: 14px;
+    color: white;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+  :root .Cart div svg {
+    width: 120px;
+    height: 70px;
+    top: 50px;
+  }
+  :root .Cart p {
+    width: 120px;
+    color: #021d25;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin: 0;
   }
 }
 #LogInContent {
@@ -690,5 +830,109 @@
     text-transform: capitalize;
     margin: 0;
     margin-top: 10px;
+  }
+}
+@media screen and (max-width: 540px) {
+  :root {
+    --desktop: 100%;
+    --content: 288px;
+  }
+  :root #LogInContent {
+    width: 320px;
+    height: 400px;
+    padding: 15px;
+  }
+  :root #LogInContent div h1 {
+    font-size: 22px;
+  }
+  :root #LogInContent div h3 {
+    width: 76px;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  :root #LogInContent form {
+    width: 191px;
+    height: 368px;
+    padding: 24px 22px 32px 22px;
+  }
+  :root #LogInContent form h2 {
+    font-size: 14px;
+    margin: 0;
+  }
+  :root #LogInContent form input {
+    width: 147px;
+    height: 42px;
+    font-size: 10px;
+    margin-top: 0px;
+  }
+  :root #LogInContent form a {
+    width: 85px;
+    margin-top: 16px;
+    margin-left: 65px;
+    color: #887d7d;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+  :root #LogInContent form #button {
+    width: 147px;
+    height: 32px;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 5px;
+    background: #bece00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    color: #f5f5f5;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 0px;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+  :root #LogInContent form .button {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 147px;
+    height: 32px;
+    padding: 16px 32px;
+    margin: 0;
+    border-radius: 5px;
+    background: #bece00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    color: #f5f5f5;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+  :root #SingUpContent {
+    width: 320px;
+    height: 593px;
+    padding: 15px;
+  }
+  :root #SingUpContent div h1 {
+    font-size: 22px;
+  }
+  :root #SingUpContent div h3 {
+    width: 76px;
+    font-weight: 400;
+    font-size: 12px;
   }
 }/*# sourceMappingURL=LogIn.css.map */

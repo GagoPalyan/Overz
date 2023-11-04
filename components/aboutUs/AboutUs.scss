@@ -79,3 +79,35 @@
     display: none;
   }
 }
+
+@media screen and (max-width: 540px) {
+  :root {
+    --desktop: 100%;
+    --content: 288px;
+    #AboutImg {
+      height: 432px;
+      @include photoEfect(
+        url("../../Images/AboutUs/Rectangle\ 3\ small.png") center center
+      );
+      background-size: cover;
+      margin-bottom: 15px;
+      h1 {
+        @include textStyle(22px, white, 800);
+      }
+      &::before {
+        @include textStyle(10px, #f5f5f5, 500, 18px);
+        top: 104px;
+      }
+      &::after {
+        @include textStyle(10px, #f5f5f5, 400, 18px);
+        top: 125px;
+      }
+    }
+    .Cart {
+      p {
+        @include textStyle(10px, #000, 400, 18px);
+      }
+      margin-bottom: 15px;
+    }
+  }
+}

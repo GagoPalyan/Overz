@@ -111,3 +111,22 @@ section {
     }
   }
 }
+
+@media screen and (max-width: 540px) {
+  :root {
+    --desktop: 100%;
+    --content: 288px;
+    .VideoCart {
+      margin-bottom: 15px;
+    }
+    #VlogContent {
+      .Cart {
+        height: 224px;
+        margin-bottom: 15px;
+      }
+    }
+    section nav {
+      margin-bottom: 15px;
+    }
+  }
+}

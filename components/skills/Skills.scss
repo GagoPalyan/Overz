@@ -20,3 +20,19 @@
     }
   }
 }
+
+@media screen and (max-width: 540px) {
+  :root {
+    --desktop: 100%;
+    --content: 288px;
+    #SkillsContent {
+      .Cart {
+        @include cart(134px, 134px);
+        padding: 7px;
+      }
+    }
+    section nav {
+      margin-bottom: 15px;
+    }
+  }
+}

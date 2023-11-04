@@ -308,3 +308,82 @@
     }
   }
 }
+
+@media screen and (max-width: 540px) {
+  :root {
+    --desktop: 100%;
+    --content: 288px;
+    #LogInContent {
+      width: 320px;
+      height: 400px;
+      padding: 15px;
+      div {
+        h1 {
+          font-size: 22px;
+        }
+        h3 {
+          width: 76px;
+          font-weight: 400;
+          font-size: 12px;
+        }
+      }
+      form {
+        width: 191px;
+        height: 368px;
+        padding: 24px 22px 32px 22px;
+        h2 {
+          font-size: 14px;
+          margin: 0;
+        }
+        input {
+          width: 147px;
+          height: 42px;
+          font-size: 10px;
+          margin-top: 0px;
+        }
+        a {
+          width: 85px;
+          margin-top: 16px;
+          margin-left: 65px;
+          @include textStyle(10px, #887d7d, 400, normal);
+        }
+        #button {
+          width: 147px;
+          height: 32px;
+          padding: 16px 32px;
+          border: none;
+          border-radius: 5px;
+          background: #bece00;
+          @include display(center);
+          @include textStyle(14px, #f5f5f5, 600, 0px);
+        }
+        .button {
+          @include display(center, flex-start);
+          width: 147px;
+          height: 32px;
+          padding: 16px 32px;
+          margin: 0;
+          border-radius: 5px;
+          background: #bece00;
+          @include display(center);
+          @include textStyle(14px, #f5f5f5, 600, 17px);
+        }
+      }
+    }
+    #SingUpContent {
+      width: 320px;
+      height: 593px;
+      padding: 15px;
+      div {
+        h1 {
+          font-size: 22px;
+        }
+        h3 {
+          width: 76px;
+          font-weight: 400;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

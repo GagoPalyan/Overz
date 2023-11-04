@@ -117,3 +117,55 @@
     }
   }
 }
+
+@media screen and (max-width: 540px) {
+  :root {
+    --desktop: 100%;
+    --content: 288px;
+    #ContactUsContent {
+      width: $desktop;
+      height: 400px;
+      background-image: url(../../Images/Contact\ Us/contactUs.png);
+      padding: 0 10px 15px 0;
+      .conUs {
+        width: 95px;
+        height: 60px;
+        margin-right: 43px;
+        a {
+          @include textStyle(10px, #fff, 500, normal);
+        }
+        nav {
+          width: 95px;
+          @include display;
+        }
+      }
+      form {
+        width: 154px;
+        height: 288px;
+        padding: 15px 12.5px;
+        &::before {
+          width: 154px;
+          left: 0;
+          top: -35px;
+          @include textStyle(15px);
+        }
+        input {
+          font-size: 10px;
+          width: 128px;
+        }
+        label {
+          margin-top: 22px;
+          @include textStyle(10px, #887d7d, 500, normal);
+          margin-left: 0;
+        }
+        textarea {
+          font-size: 10px;
+          width: 128px;
+        }
+        #button {
+          width: 154px;
+        }
+      }
+    }
+  }
+}

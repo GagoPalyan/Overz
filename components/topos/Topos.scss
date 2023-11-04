@@ -21,3 +21,27 @@
     top: 155px;
   }
 }
+
+@media screen and (max-width: 540px) {
+  :root {
+    --desktop: 100%;
+    --content: 288px;
+    #ToposContent {
+      .Cart {
+        @include cart(134px, 144px);
+        padding: 7px;
+        margin-bottom: 15px;
+        div {
+          height: 129px;
+          svg {
+            top: 59px;
+          }
+          h2 {
+            top: 91px;
+            @include textStyle(12px, #fff, 600, 18px);
+          }
+        }
+      }
+    }
+  }
+}

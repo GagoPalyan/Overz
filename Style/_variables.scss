@@ -171,10 +171,10 @@ $content: var(--content);
       }
     }
     .VideoCart {
-      @include cart(540px, 335px);
+      @include cart(520px, 335px);
       padding: 15px;
       div {
-        width: 510px;
+        width: 490px;
         height: 250px;
       }
       p {
@@ -215,6 +215,68 @@ $content: var(--content);
       }
       a {
         display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  :root {
+    --desktop: 100%;
+    --content: 288px;
+    .w-100 {
+      height: 288px !important;
+    }
+
+    .carousel1 {
+      .carouselTextP {
+        p {
+          width: $content;
+          font-size: 10px;
+        }
+      }
+    }
+    #HomeContent {
+      padding: 32px 0;
+    }
+    .VideoCart {
+      @include cart(288px, 240px);
+      padding: 16px;
+      div {
+        width: 257px;
+        height: 144px;
+      }
+      p {
+        width: 100px;
+        @include textStyle(10px, #021d25, 500, 18px);
+      }
+    }
+    .Cart {
+      @include cart(134px, 222px);
+      padding: 7px;
+      div {
+        width: 120px;
+        height: 120px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+        h2 {
+          position: absolute;
+          top: 88px;
+          right: 14px;
+          @include textStyle(14px);
+        }
+        svg {
+          width: 120px;
+          height: 70px;
+          top: 50px;
+        }
+      }
+      p {
+        width: 120px;
+        @include textStyle(12px, #021d25, 500, 18px);
+        margin: 0;
       }
     }
   }
