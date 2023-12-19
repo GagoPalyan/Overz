@@ -100,9 +100,6 @@
     display: flex;
     position: relative;
   }
-  :root header .body .burgerMenu:hover .hiddenMenu {
-    display: flex;
-  }
   :root header .body .burgerMenu .hiddenMenu {
     width: 100%;
     height: 100vh;
@@ -548,9 +545,6 @@
   :root header .body .burgerMenu {
     display: flex;
     position: relative;
-  }
-  :root header .body .burgerMenu:hover .hiddenMenu {
-    display: flex;
   }
   :root header .body .burgerMenu .hiddenMenu {
     width: 100%;

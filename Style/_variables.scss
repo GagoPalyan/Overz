@@ -96,9 +96,9 @@ $content: var(--content);
         .burgerMenu {
           display: flex;
           position: relative;
-          &:hover .hiddenMenu {
-            display: flex;
-          }
+          // &:hover .hiddenMenu {
+          //   display: flex;
+          // }
           .hiddenMenu {
             width: 100%;
             height: 100vh;
